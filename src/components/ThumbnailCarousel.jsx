@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import EmblaCarousel from 'embla-carousel';
-import '../styles/carousel.css';
+import '../styles/embla.css';
 
 const slides = [
   '/images/blue-slide.jpg',
@@ -24,7 +24,9 @@ const ThumbnailCarousel = () => {
 
   return (
     <div className="carousel-container relative flex flex-col items-center">
-      <div className="carousel relative">  {/* Updated this line */}
+      <div className="carousel relative">
+        {' '}
+        {/* Updated this line */}
         <button
           onClick={scrollPrev}
           className="prevButton p-2 bg-gray-500 rounded-full absolute top-1/2 left-4 transform -translate-y-1/2"

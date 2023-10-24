@@ -1,6 +1,6 @@
-# Embla Carousel with Next.js 13 and TailwindCSS
+# Embla Carousel with Next.js 13, the next/image component and TailwindCSS
 
-This project demonstrates how to integrate the Embla Carousel with a vanilla implementation of Next.js 13 and TailwindCSS. Embla Carousel is a highly customizable, low-level carousel library. In this repository, you'll find how to set up a basic carousel with thumbnails below, which interact with the main carousel. Additionally, we've added some custom styling to enhance the look of the carousel.
+This repository demonstrates the integration of Embla Carousel with Next.js 13, featuring the new version of Next.js Image component. Tailwind CSS is also incorporated for styling purposes. The project showcases a basic carousel with thumbnails below, each of which interacts with the main carousel to select which image to show. There are many options available when customizing Embla Carousel, so this repo is simply a starting point.
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ This project demonstrates how to integrate the Embla Carousel with a vanilla imp
     import Image from 'next/image';
     import { useEffect, useRef, useState } from 'react';
     import EmblaCarousel from 'embla-carousel';
-    import '../styles/carousel.css';
+    import '../styles/embla.css';
     ```
 
 5. **Set Up the Carousel**
@@ -78,7 +78,7 @@ This project demonstrates how to integrate the Embla Carousel with a vanilla imp
     ```
 
 7. **Style Your Carousel**
-    - Create a `carousel.css` file in the `styles` directory to add custom styling to your carousel.
+    - Create an `embla.css` file in the `styles` directory to add custom styling to your carousel.
     - Import this CSS file in your `ThumbnailCarousel` component as shown in step 4.
 
 8. **Test Your Carousel**
@@ -87,11 +87,11 @@ This project demonstrates how to integrate the Embla Carousel with a vanilla imp
 ## Custom Features
 
 - **Thumbnail Interaction**: The thumbnails below the main carousel interact with it. Clicking a thumbnail navigates the main carousel to the respective slide.
-- **Custom Styling**: Added some custom styling to enhance the look of the carousel and navigation buttons.
+- **Tailwindcss Styling**: Added some custom styling using Tailwind to enhance the look of the carousel and navigation buttons.
 
 ## Conclusion
 
-This project showcases a simple yet elegant carousel setup with Embla Carousel in a Next.js environment with TailwindCSS for styling. Feel free to clone this repository, explore the code, and extend it to fit your needs.
+This project showcases a simple yet elegant carousel setup with Embla Carousel in a Next.js environment using next/image to optimize images and TailwindCSS for styling. Feel free to clone this repository, explore the code, and extend it to fit your needs.
 
 ---
 
