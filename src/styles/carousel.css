@@ -1,0 +1,60 @@
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  min-width: 100%;
+  position: relative;
+}
+
+/* custom styles */
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.carousel {
+  width: 800px;
+  margin: 0 auto 8px auto;
+  position: relative;
+}
+
+.prevButton {
+  position: absolute;
+  top: 50%; /* This centers the button vertically */
+  left: 20px; /* This positions the left edge of the button 20px from the left edge of the carousel */
+  transform: translateY(
+    -50%
+  ); /* This ensures the button is truly centered vertically */
+  z-index: 1; /* Ensures the button is on top of the carousel */
+}
+
+.nextButton {
+  position: absolute;
+  top: 50%; /* This centers the button vertically */
+  right: 20px; /* This positions the right edge of the button 20px from the right edge of the carousel */
+  transform: translateY(
+    -50%
+  ); /* This ensures the button is truly centered vertically */
+  z-index: 1; /* Ensures the button is on top of the carousel */
+}
+
+.thumbnail {
+  min-width: auto;
+  width: 100%;
+  margin-right: 12px;
+}
+.embla-thumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
